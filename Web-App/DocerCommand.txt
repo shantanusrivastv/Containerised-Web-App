@@ -1,0 +1,4 @@
+﻿docker run -p 7471:80 -p 7472:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=7472 -e ASPNETCORE_Kestrel__Certificates__Default__Password="Passw0rd" -e ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx -v %USERPROFILE%\.aspnet\https:/https/ kshantanu/shantanu-web-app:1.0
+
+
+//The Above will use certificate and run 
