@@ -18,6 +18,24 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 80
+      #   env:
+      #   - name: ASPNETCORE_URLS
+      #     value: https://+;http://+
+      #   - name: ASPNETCORE_HTTPS_PORT
+      #     value: "30015"
+      #   - name: ASPNETCORE_Kestrel__Certificates__Default__Password
+      #     value: Passw0rd
+      #   - name: ASPNETCORE_Kestrel__Certificates__Default__Path
+      #     value: /app/secrets/ca.crt
+
+      #   volumeMounts:
+      #   - name: secrets
+      #     mountPath: /app/secrets
+      #     readOnly: true
+      # volumes:
+      # - name: secrets
+      #   secret:
+      #     secretName: shantanu-tls-secret         
 ---
 apiVersion: v1
 kind: Service
